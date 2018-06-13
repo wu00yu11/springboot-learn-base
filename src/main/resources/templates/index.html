@@ -5,6 +5,12 @@
 </head>
 <body>
 <h1 th:inline="text">Hello.v.2</h1>
-<p th:text="${result.code}"></p>
+<div>
+    <form action="/hello/findStaff">
+        <input type="text" name="name">
+        <input type="text" name="age">
+        <input type="submit" value="确定">
+    </form>
+</div>
 </body>
 </html>

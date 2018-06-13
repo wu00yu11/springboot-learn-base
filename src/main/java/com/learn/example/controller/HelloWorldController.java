@@ -16,6 +16,11 @@ public class HelloWorldController {
 
     @GetMapping("/index")
     public String index() throws AppException {
-        throw  new AppException("404","找不到请求资源","index");
+        throw  new AppException("404","找不到请求资源");
+    }
+
+    @GetMapping("/findStaff")
+    public String findStaff(@Validated Staff staff){
+        return "";
     }
 }
