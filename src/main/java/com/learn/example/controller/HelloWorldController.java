@@ -15,7 +15,7 @@ public class HelloWorldController {
     private static Logger LOG = LoggerFactory.getLogger(HelloWorldController.class);
 
     @GetMapping("/index")
-    public String index(@Validated Staff staff) throws AppException {
+    public String index() throws AppException {
         throw  new AppException("404","找不到请求资源","index");
     }
 }

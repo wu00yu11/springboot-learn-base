@@ -5,7 +5,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 @Data
-public class ResultData<T> implements Serializable {
+public class Result<T> implements Serializable {
 
     private static final long serialVersionUID = 41600483548885466L;
 
@@ -15,15 +15,15 @@ public class ResultData<T> implements Serializable {
 
     private T data;
 
-    public ResultData() {
+    public Result() {
     }
 
-    public ResultData(String status, String msg) {
+    public Result(String status, String msg) {
         this.status = status;
         this.msg = msg;
     }
 
-    public ResultData(String status, String msg, T data) {
+    public Result(String status, String msg, T data) {
         this.status = status;
         this.msg = msg;
         this.data = data;
